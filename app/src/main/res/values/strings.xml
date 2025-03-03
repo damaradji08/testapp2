@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">testapp2</string>
+    <string name="kode_pelanggan">Kode Pelanggan</string>
+    <string name="nama_pelanggan">Nama Pelanggan</string>
+    <string name="no_telp">No. Telp</string>
+    <string name="baru">BARU</string>
+    <string name="hapus">HAPUS</string>
+    <string name="simpan">SIMPAN</string>
+    <string name="ubah">UBAH</string>
+</resources>

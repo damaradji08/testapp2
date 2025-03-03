@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="16dp">>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kode Pelanggan" />
+
+    <EditText
+        android:id="@+id/edTextKode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Kode Pelanggan"
+        android:background="@android:color/white"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama" />
+
+    <EditText
+        android:id="@+id/edTextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Nama"
+        android:background="@android:color/white"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No. Telp" />
+
+    <EditText
+        android:id="@+id/edTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Nomor Telepon"
+        android:background="@android:color/white"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <Button
+            android:id="@+id/btnBaru"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:minWidth="90dp"
+            android:minHeight="50dp"
+            android:padding="0dp"
+            android:text="BARU"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:minWidth="90dp"
+            android:minHeight="50dp"
+            android:padding="0dp"
+            android:text="SIMPAN"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnUbah"
+            style="@style/Widget.Material3.Button.IconButton.Filled"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:minWidth="90dp"
+            android:minHeight="50dp"
+            android:padding="0dp"
+            android:text="UBAH"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:minWidth="90dp"
+            android:minHeight="50dp"
+            android:padding="0dp"
+            android:text="HAPUS"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Tabel Data Pelanggan -->
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tabel_kode"
+            android:layout_width="6dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#BDBDBD"
+            android:gravity="center"
+            android:text="KODE"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tabel_nama"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#BDBDBD"
+            android:gravity="center"
+            android:text="NAMA PELANGGAN"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tabel_telp"
+            android:layout_width="59dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#BDBDBD"
+            android:gravity="center"
+            android:text="TELP"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:paddingTop="8dp"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BDBDBD"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtKode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="KODE"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="NAMA PELANGGAN"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:id="@+id/txtTelp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="TELP"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="#E0E0E0" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
